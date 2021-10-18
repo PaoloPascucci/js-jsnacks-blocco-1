@@ -114,3 +114,10 @@ function snc8() {
     document.getElementById('snack_8').innerHTML = Summary
 }
 
+
+function snc9() {
+    const Usersum = 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10
+    const Med = Usersum / 10
+    document.getElementById('sum').innerHTML = Usersum
+    document.getElementById('medium').innerHTML = Med
+}
