@@ -54,3 +54,24 @@ function snc3() {
 
 }
 
+function snc4() {
+    //snack 4
+    const UserName = prompt('Mi serve la tua Email, grazie')
+    var check = 0
+    const Guestes = ["Pablo", "Francesco", "Matteo", "Rosty"]
+    for (let i = 0; i <= Guestes.length; i++) {
+        if (Guestes[i] == UserName) {
+            var check = 1
+
+        }
+    }
+    if (check == 1) {
+        document.getElementById('snack_4').innerHTML = "Passa pure, sir"
+
+    }
+    else if (check == 0) {
+        document.getElementById('snack_4').innerHTML = "NUN CE PROVA; DISGRAZIATO, TORNA CASA TUA, IMMIGRATO"
+
+    }
+}
+
