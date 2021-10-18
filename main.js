@@ -36,20 +36,12 @@ function snc2() {
 }
 function snc3() {
     //snack 3
+    const Sum = 0
+    for (let i = 0; i < 10; i++) {
+        const Number = parseInt(prompt('Inserisci un numero'));
+        Sum = Sum + Number;
 
-    const Num1 = parseInt(prompt('Inserisci un numero'));
-    const Num2 = parseInt(prompt('Inserisci un numero'));
-    const Num3 = parseInt(prompt('Inserisci un numero'));
-    const Num4 = parseInt(prompt('Inserisci un numero'));
-    const Num5 = parseInt(prompt('Inserisci un numero'));
-    const Num6 = parseInt(prompt('Inserisci un numero'));
-    const Num7 = parseInt(prompt('Inserisci un numero'));
-    const Num8 = parseInt(prompt('Inserisci un numero'));
-    const Num9 = parseInt(prompt('Inserisci un numero'));
-    const Num10 = parseInt(prompt('Inserisci un numero'));
-
-    const Sum = Num1 + Num2 + Num3 + Num4 + Num5 + Num6 + Num7 + Num8 + Num9 + Num10
-
+    }
     document.getElementById("snack_3").innerHTML = Sum;
 
 }
@@ -71,6 +63,25 @@ function snc4() {
     }
     else if (check == 0) {
         document.getElementById('snack_4').innerHTML = "NUN CE PROVA; DISGRAZIATO, TORNA CASA TUA, IMMIGRATO"
+
+    }
+}
+function snc5() {
+    //snack 
+    const array = [""];
+    for (let i = 1; i < 6; i++) {
+
+        const Number = parseInt(prompt('Inserisci un numero'));
+
+
+        if (Number % 2 != 0) {
+
+            array.push(Number)
+
+        }
+        else {
+            document.getElementById('snack_5').innerHTML = "Il numero da lei inserito è errato. La preghiamo di riprovare piu tardi, Grazie."
+        }
 
     }
 }
