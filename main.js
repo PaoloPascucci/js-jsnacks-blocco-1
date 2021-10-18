@@ -108,8 +108,13 @@ function snc7() {
 
 function snc8() {
     const DividedNum = prompt("Insersci 4 cifre");
-
-    const Summary = DividedNum.charAt(0) + DividedNum.charAt(1) + DividedNum.charAt(2) + DividedNum.charAt(3);
+    let Summary = 0
+    for (let index = 0; index < DividedNum.length; index++) {
+        const Summari = parseInt(DividedNum.charAt(index))
+        Summary += Summari
+    }
+    console.log(Summary);
+   // const Summary = DividedNum.charAt(0) + DividedNum.charAt(1) + DividedNum.charAt(2) + DividedNum.charAt(3);
 
     document.getElementById('snack_8').innerHTML = Summary
 }
