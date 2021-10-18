@@ -105,3 +105,12 @@ function snc7() {
     }
     document.getElementById('snack_7').innerHTML = Esponent
 }
+
+function snc8() {
+    const DividedNum = prompt("Insersci 4 cifre");
+
+    const Summary = DividedNum.charAt(0) + DividedNum.charAt(1) + DividedNum.charAt(2) + DividedNum.charAt(3);
+
+    document.getElementById('snack_8').innerHTML = Summary
+}
+
