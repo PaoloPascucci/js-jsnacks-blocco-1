@@ -87,15 +87,21 @@ function snc5() {
 }
 function snc6() {
     const UserSelect = parseInt(prompt("Inserisci un numero"))
-    const Usernumber = [""];
+    const Usernumber = [];
     for (let i = 1; i <= UserSelect; i++) {
-        Usernumber.push(Math.pow(i, 3));
+        let contati = Math.pow(i, 3);
+        Usernumber.push(contati)
     }
     document.getElementById('snack_6').innerHTML = Usernumber
 }
 
 function snc7() {
-
-
-
+    const Esponent = [];
+    i = 1
+    while (i < 10) {
+        Result = Math.pow(2, i);
+        Esponent.push(Result);
+        i++;
+    }
+    document.getElementById('snack_7').innerHTML = Esponent
 }
