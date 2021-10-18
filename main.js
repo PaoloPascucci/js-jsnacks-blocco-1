@@ -85,4 +85,17 @@ function snc5() {
 
     }
 }
+function snc6() {
+    const UserSelect = parseInt(prompt("Inserisci un numero"))
+    const Usernumber = [""];
+    for (let i = 1; i <= UserSelect; i++) {
+        Usernumber.push(Math.pow(i, 3));
+    }
+    document.getElementById('snack_6').innerHTML = Usernumber
+}
 
+function snc7() {
+
+
+
+}
